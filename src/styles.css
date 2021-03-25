@@ -1,4 +1,27 @@
-
+/*-- Carousel --*/
+.carousel-wrapper .flickity-page-dots {
+  display: none;
+}
+.carousel-wrapper{
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 25%;
+  overflow: hidden;
+  z-index: 3;
+  padding-top: 100px;
+  padding-bottom: 400px;
+}
+.carousel-wrapper .carousel{
+  height: auto;
+}
+.carousel-wrapper .flickity-viewport, 
+.carousel-wrapper .flickity-slider {
+  overflow: visible;
+}
+.carousel-wrapper .is-selected .box{
+  transform: scale(1.7)
+}
 .box-bg {
   display: none;
   position: absolute;
@@ -11,7 +34,7 @@
 }
 .box{
   height: 284px;
-  /*width: 216px;*/
+  width: 216px;
   background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
   border-radius: 16px;
   display: flex;
@@ -45,67 +68,18 @@
 .box:hover .box-name{
   color: #FFFF;
 }
-/* owl carousel */
-.owl-carousel .owl-stage {
-  display: flex;
-  background-color: red;
-}
 
-.owl-carousel .owl-item {
-  margin-top: 150px;
-  height: 292px;
-  max-width: 220px;
-}
-.owl-carousel .owl-item.active.center {
-  margin-top: 0;
-  height: 556px;
-  min-width: 456px;
-  transition: all 0.1s;
-}
-.owl-carousel .owl-item img {
-  height: 80px;
-  width: 80px;
-  max-height: 100%;
-  max-width: 100%;
-}
-.owl-carousel .owl-stage-outer {
-  padding-top: 150px;
-}
-.owl-carousel .owl-item.active.center  {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.owl-carousel .owl-item.active.center .box-bg{
-  display: block;
-}
-.owl-carousel .owl-item.active.center .box {
-  margin-top:0px;
-  /* height: 556px;
-  width: 456px;
-  min-width: 349px;
-  height: 286px; */
-  height: 556px;
-  width: 456px;
-}
-.owl-carousel .owl-item.active.center .model{
-  height: 160px;
-  width: 160px;
-}
-.owl-carousel .owl-item.active.center .box-name {
-  font-size: 40px;
-  line-height: 58px;
-}
 
 /*--responsive for mobile phone--*/
 /* @media(max-width:720px){
-    .box-bg{
-        width: 49%;
-    }
-    .box{
-        width:94%;
-    }
-    .details p {
-        font-size:16px;
-        width:250px;
-    }
+  .box-bg{
+      width: 49%;
+  }
+  .box{
+      width:94%;
+  }
+  .details p {
+      font-size:16px;
+      width:250px;
+  }
 }  */
